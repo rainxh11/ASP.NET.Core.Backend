@@ -1,0 +1,21 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ output extension=".cs" #>
+
+using System.Reflection;
+
+[assembly: AssemblyVersion("<#= this.Year #>.<#= this.Month #>.<#= this.DaysSinceProjectStarted #>.<#= this.MinutesSinceMidnight  #>")]
+[assembly: AssemblyCopyright("Copyright ©  <#= this.Year #>, 50LAB.")]
+<#+
+
+ int Major = 1;
+ int Minor = 2203;
+
+ int Year = DateTime.Now.Year;
+ int Month = DateTime.Now.Month;
+ 
+ static DateTime ProjectStartedDate = new DateTime(year: 2022, month: 05, day: 19);
+ int DaysSinceProjectStarted = (int)((DateTime.UtcNow - ProjectStartedDate).TotalDays);
+
+ int MinutesSinceMidnight = (int)DateTime.UtcNow.TimeOfDay.TotalMinutes; 
+
+#>

@@ -1,0 +1,15 @@
+﻿@page
+@inject IConfiguration Config
+@model QuranSchool.Models.EmailConfirmModel
+@{
+    <img height="300" width="300" src="https://madrasacloud.com/images/logo/logo.svg"/>
+    <h1>Please verify your email @Model.Email</h1>
+    <h3>Please verify your email so that we can confirm it’s really you who signed up for our list. Press the link to confirm your account</h3>
+
+
+    <a href="https://madrasacloud.com/auth/verify?token=@Model.Token&email=@Model.Email">Confirm my account</a>
+    <h3>If the link doesn't work. you can use confirmation token to manually confirm</h3>
+    <h3>
+        <b>@Model.Token</b>
+    </h3>
+}

@@ -1,0 +1,179 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>FiftyLabSchool</AssemblyName>
+	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+	  <Deterministic>False</Deterministic>
+	  <MvcRazorExcludeRefAssembliesFromPublish>false</MvcRazorExcludeRefAssembliesFromPublish>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Keys\**" />
+    <Content Remove="Keys\**" />
+    <EmbeddedResource Remove="Keys\**" />
+    <None Remove="Keys\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Notifications\French.json" />
+    <Content Remove="Templates\EmailConfirm.cshtml" />
+    <Content Remove="Templates\PasswordReset.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\header.png" />
+    <None Remove="certificate.crt" />
+    <None Remove="certificate.pfx" />
+    <None Remove="private.key" />
+    <None Remove="quranschool.service" />
+    <None Remove="Report\InvoiceDocument.vsrepx" />
+    <None Remove="Report\StudentPasswordsDocument.vsrepx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\header.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="certificate.crt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="private.key">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="quranschool.service">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Report\InvoiceDocument.vsrepx" />
+    <EmbeddedResource Include="Report\StudentPasswordsDocument.vsrepx" />
+    <EmbeddedResource Include="Templates\EmailConfirm.cshtml" />
+    <EmbeddedResource Include="Templates\PasswordReset.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.Identity.Mongo" Version="8.3.3" />
+    <PackageReference Include="Autofac.AspNetCore.Multitenant" Version="6.0.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Colorful.Console" Version="1.2.15" />
+    <PackageReference Include="Cronos" Version="0.7.1" />
+    <PackageReference Include="Dates.Recurring" Version="2.0.11" />
+    <PackageReference Include="DevExpress.Reporting.Core" Version="21.2.6" />
+    <PackageReference Include="ExcelDataReader.Mapping" Version="2.2.2" />
+    <PackageReference Include="FluentEmail.Core" Version="3.0.2" />
+    <PackageReference Include="FluentEmail.MailKit" Version="3.0.2" />
+    <PackageReference Include="FluentEmail.Razor" Version="3.0.2" />
+    <PackageReference Include="FluentEmail.Smtp" Version="3.0.2" />
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="Google.Apis.Oauth2.v2" Version="1.58.0.1869" />
+    <PackageReference Include="Hangfire" Version="1.7.32" />
+    <PackageReference Include="Hangfire.Mongo" Version="1.7.3" />
+    <PackageReference Include="Hashids.net" Version="1.6.1" />
+    <PackageReference Include="Invio.Hashing" Version="1.3.6" />
+    <PackageReference Include="Jetsons.JetPack" Version="1.2.1" />
+    <PackageReference Include="Mapster" Version="7.3.0" />
+    <PackageReference Include="Mapster.Async" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Formatters.Json" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Systemd" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="7.0.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.25.1" />
+    <PackageReference Include="MimeKit" Version="3.4.3" />
+    <PackageReference Include="MongoDB.Bson" Version="2.18.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
+    <PackageReference Include="MongoDB.Driver.GridFS" Version="2.18.0" />
+    <PackageReference Include="MongoDB.Entities" Version="21.0.1" />
+    <PackageReference Include="MongoDB.Entities.ReactiveChangeStream" Version="1.0.2" />
+    <PackageReference Include="MongoDB.Libmongocrypt" Version="1.6.0" />
+    <PackageReference Include="NetDevPack.Security.Jwt.AspNetCore" Version="7.0.2" />
+    <PackageReference Include="NetDevPack.Security.Jwt.Core" Version="7.0.2" />
+    <PackageReference Include="NetDevPack.Security.PasswordHasher.Bcrypt" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Ng.UserAgentService" Version="1.1.2" />
+    <PackageReference Include="Revoke.NET" Version="2.0.1" />
+    <PackageReference Include="Revoke.NET.AspNetCore" Version="2.0.0" />
+    <PackageReference Include="Revoke.NET.MongoDB" Version="2.0.0" />
+    <PackageReference Include="Serilog" Version="2.12.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+    <PackageReference Include="Serilog.Enrichers.AspNetCore" Version="1.0.0" />
+    <PackageReference Include="Serilog.Enrichers.AspNetCore.HttpContext" Version="1.0.1" />
+    <PackageReference Include="Serilog.Enrichers.ClientInfo" Version="1.2.0" />
+    <PackageReference Include="Serilog.Enrichers.Demystifier" Version="1.0.2" />
+    <PackageReference Include="Serilog.Enrichers.ExceptionData" Version="1.0.0" />
+    <PackageReference Include="Serilog.Enrichers.Memory" Version="1.0.4" />
+    <PackageReference Include="Serilog.Enrichers.Process" Version="2.0.2" />
+    <PackageReference Include="Serilog.Enrichers.RequestUserId" Version="1.0.0" />
+    <PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="5.0.1" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.5.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Serilog.Sinks.Map" Version="1.0.2" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="5.2.2" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.3" />
+    <PackageReference Include="SmtpServer" Version="9.0.2" />
+    <PackageReference Include="StringRandomizer" Version="1.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="6.4.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.1" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.23" />
+    <PackageReference Include="System.Reactive" Version="5.0.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="7.0.0" />
+    <PackageReference Include="Two.AspNetCore.SpaServices.StaticFiles" Version="0.9.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MegaDatabaseBackup\MegaDatabaseBackup.csproj" />
+    <ProjectReference Include="..\QuranApi\QuranApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Notifications\French.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Controllers\EventController.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
+    <Compile Update="Properties\VersionAutoIncrementer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>VersionAutoIncrementer.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Report\InvoiceDocument.cs">
+      <DependentUpon>InvoiceDocument.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Report\InvoiceDocument.Designer.cs">
+      <DependentUpon>InvoiceDocument.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Report\StudentPasswordsDocument.cs">
+      <DependentUpon>StudentPasswordsDocument.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Report\StudentPasswordsDocument.Designer.cs">
+      <DependentUpon>StudentPasswordsDocument.vsrepx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\VersionAutoIncrementer.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>VersionAutoIncrementer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+</Project>

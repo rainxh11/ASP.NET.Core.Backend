@@ -1,0 +1,9 @@
+[Unit]
+Description=50LAB School Server
+
+[Service]
+Type=notify
+ExecStart=/root/server/FiftyLabSchool
+
+[Install]
+WantedBy=multi-user.target
