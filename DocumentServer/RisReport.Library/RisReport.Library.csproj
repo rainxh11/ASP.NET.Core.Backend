@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\header.svg" />
+    <None Remove="Assets\logo.svg" />
+    <None Remove="Assets\receipt_header.png" />
+    <None Remove="Assets\watermark.png" />
+    <None Remove="Reports\DebtReceipt.vsrepx" />
+    <None Remove="Reports\DebtReport.vsrepx" />
+    <None Remove="Reports\IncomeReport.vsrepx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\logo.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\header.svg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\receipt_header.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\watermark.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\DebtReceipt.vsrepx" />
+    <EmbeddedResource Include="Reports\DebtReport.vsrepx" />
+    <EmbeddedResource Include="Reports\IncomeReport.vsrepx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Reporting.Core" Version="21.2.4" />
+    <PackageReference Include="MongoDB.Bson" Version="2.14.1" />
+    <PackageReference Include="MongoDB.Entities" Version="20.26.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Reports\DebtReceipt.cs">
+      <DependentUpon>DebtReceipt.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\DebtReceipt.Designer.cs">
+      <DependentUpon>DebtReceipt.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\DebtReport.cs">
+      <DependentUpon>DebtReport.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\DebtReport.Designer.cs">
+      <DependentUpon>DebtReport.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\IncomeReport.cs">
+      <DependentUpon>IncomeReport.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Reports\IncomeReport.Designer.cs">
+      <DependentUpon>IncomeReport.vsrepx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

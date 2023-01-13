@@ -1,0 +1,113 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <AssemblyName>SklabDicomServer</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="akavache" Version="9.0.1" />
+    <PackageReference Include="akavache.sqlite3" Version="9.0.1" />
+    <PackageReference Include="fo-dicom" Version="5.0.2" />
+    <PackageReference Include="fo-dicom.Drawing" Version="4.0.8" />
+    <PackageReference Include="fo-dicom.NetCore" Version="4.0.8" />
+    <PackageReference Include="fo-dicom.Serilog" Version="4.0.8" />
+    <PackageReference Include="Hangfire" Version="1.7.31" />
+    <PackageReference Include="Hangfire.MemoryStorage" Version="1.7.0" />
+    <PackageReference Include="Invio.Hashing" Version="1.3.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.WindowsServices" Version="6.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.ResponseCompression" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Core" Version="1.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Systemd" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="6.0.0" />
+    <PackageReference Include="MongoDB.Bson" Version="2.17.1" />
+    <PackageReference Include="MongoDB.Driver" Version="2.17.1" />
+    <PackageReference Include="MongoDB.Driver.GridFS" Version="2.17.1" />
+    <PackageReference Include="MongoDB.Entities" Version="20.26.5" />
+    <PackageReference Include="MongoDB.Libmongocrypt" Version="1.5.5" />
+    <PackageReference Include="morelinq" Version="3.3.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Refit" Version="6.3.2" />
+    <PackageReference Include="Refit.HttpClientFactory" Version="6.3.2" />
+    <PackageReference Include="Refit.Newtonsoft.Json" Version="6.3.2" />
+    <PackageReference Include="SQLitePCLRaw.lib.e_sqlite3" Version="2.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.19" />
+    <PackageReference Include="System.Reactive" Version="5.0.0" />
+    <PackageReference Include="WebP_Net" Version="1.1.0" />
+    <PackageReference Include="WebSocketSharp-netstandard" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\linux\native\libsnappy64.so" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\linux\native\libsnappy64.so" />
+    <Content Remove="C:\Users\rainx\.nuget\packages\mongodb.libmongocrypt\1.3.0\contentFiles\any\netstandard2.1\libmongocrypt.dylib" />
+    <Content Remove="C:\Users\rainx\.nuget\packages\mongodb.libmongocrypt\1.3.0\contentFiles\any\netstandard2.1\libmongocrypt.so" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\osx\native\libsnappy64.dylib" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\osx\native\libsnappy64.dylib" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\linux\native\libsnappy64.so" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\linux\native\libsnappy64.so" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\osx\native\libsnappy64.dylib" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\osx\native\libsnappy64.dylib" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\osx\native\libsnappy64.dylib" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\linux\native\libsnappy64.so" />
+    <None Include="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\linux\native\libzstd.so" />
+    <None Include="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\osx\native\libsnappy64.dylib" />
+    <None Include="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\osx\native\libzstd.dylib">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\linux\native\libsnappy64.so" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\osx\native\libzstd.dylib" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\rainx\.nuget\packages\mongodb.driver.core\2.14.0\build\..\runtimes\linux\native\libzstd.so" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+
+</Project>

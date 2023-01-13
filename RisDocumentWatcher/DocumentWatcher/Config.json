@@ -1,0 +1,13 @@
+{
+  "DocumentFolder": "D:\\RIS_COMPTE_RENDU",
+  "DicomTemp": "D:\\DICOM_TEMP",
+  "DicomViewer": "RadiAntViewer.exe",
+  "ExtensionFilter": "*.docx",
+  "MongoDBConnectionString": "mongodb://127.0.0.1:27017/RisDb?replicaSet=rs0",
+  "MongoDBDatabase": "RisDb",
+  "DocumentServer": "http://172.16.1.198:5000",
+  "WebapiUri": "http://127.0.0.1:5500",
+  "DicomServer": "http://172.0.0.1:100",
+  "MaxConcurrentRefreshs": 8,
+  "InitialConcurrentRefreshs" : 4
+}

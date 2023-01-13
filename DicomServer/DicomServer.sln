@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31521.260
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DicomForwarder", "DicomForwarder\DicomForwarder.csproj", "{F39184BA-E98C-43E4-BA40-2C76C7808583}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DicomServer", "DicomServer\DicomServer.csproj", "{DEC557EE-44EE-467B-8859-B03BD5D8F076}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DicomModalityBruteforcer", "DicomModalityBruteforcer\DicomModalityBruteforcer.csproj", "{29DE1979-B920-49F6-94D8-05C8F730DC3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrthancCrawler", "OrthancCrawler\OrthancCrawler.csproj", "{6AD2027D-6C10-452B-8F94-534455A2F572}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F39184BA-E98C-43E4-BA40-2C76C7808583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F39184BA-E98C-43E4-BA40-2C76C7808583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F39184BA-E98C-43E4-BA40-2C76C7808583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F39184BA-E98C-43E4-BA40-2C76C7808583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEC557EE-44EE-467B-8859-B03BD5D8F076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEC557EE-44EE-467B-8859-B03BD5D8F076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEC557EE-44EE-467B-8859-B03BD5D8F076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEC557EE-44EE-467B-8859-B03BD5D8F076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29DE1979-B920-49F6-94D8-05C8F730DC3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29DE1979-B920-49F6-94D8-05C8F730DC3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29DE1979-B920-49F6-94D8-05C8F730DC3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29DE1979-B920-49F6-94D8-05C8F730DC3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD2027D-6C10-452B-8F94-534455A2F572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD2027D-6C10-452B-8F94-534455A2F572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD2027D-6C10-452B-8F94-534455A2F572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD2027D-6C10-452B-8F94-534455A2F572}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5464E9A5-420D-4746-A64D-9E276EDA2874}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,17 @@
+{
+  "ServerPort": 104,
+  "ForwardDestinations": [
+    //Med Dream Print Server
+    {
+      "AET": null,
+      "Host": "172.16.1.60",
+      "Port": 104
+    },
+    //Orthanc PACS Server
+    {
+      "AET": "ORTHANC",
+      "Host": "172.16.1.198",
+      "Port": 4242
+    }
+  ]
+}
